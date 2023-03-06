@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+  position: absolute;
+  color: rgb(0, 255, 221);
+  font-weight: bold;
+  font-size: larger;
+  margin: 0;
+  top: 25%;
+  left: 40%;
+}
+#btn{
+position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  margin: 0;
+  top:60%;
+  left: 25%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.404);
+  padding: 10px;
+  border-radius: 5px;
+}
+#btn:hover{
+  background-color: rgba(255, 255, 255, 0.192);
+  border-radius: 10px;
+  transition: .25s;
+}
+#btn:active{
+  color:#000000
+}
+#bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  margin: 0;
+}
+
+/* body,
+.quote-input {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+} */
+
+.container {
+  background-color: rgba(255, 255, 255, 0.418);
+  border-radius: 0.5rem;
+  width: 50%;
+  max-width: 100%;
+}
+
+.timer {
+  position: absolute;
+  top: 7rem;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+
+.quote-display {
+  margin-bottom: 1rem;
+  margin-left: calc(1rem + 2px);
+  margin-right: calc(1rem + 2px);
+  margin-top: 1rem;
+}
+.correct{
+color: green;
+}
+.incorrect{
+  color:red
+}
+
+.quote-input {
+  background-color: white;
+  border: 2px solid white;
+  outline: none;
+  width: 100%;
+  height: 8rem;
+  margin: auto;
+  resize: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+body {
+  margin: 0;
+}
+.container {
+  position: absolute;
+}
+.container img {
+  display: block;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: absolute;
+  background-repeat: no-repeat;
+}
+nav {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 5%;
+  height: 100px;
+  background-color: transparent;
+}
+nav .logo {
+  float: left;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+nav .links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+nav .links li {
+  list-style: none;
+}
+nav .links li:hover {
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.404);
+  border-radius: 5px;
+  transition: .25s;
+}
+nav .links a {
+  display: block;
+  padding: 1em;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  font-size:larger;
+}
+nav .links a:active{
+  color: #000000;
+}
+nav .links li:active{
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.329);
+  border-radius: 5px;
+}
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+}
+nav .icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav .icon-burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  nav .logo {
+    float: none;
+    width: auto;
+  }
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+  }
+  nav .links a {
+    font-size: 20px;
+  }
+  nav .links a:hover{
+    background-color: rgba(0, 0, 0, 0.288);
+  }
+  nav :checked ~ .links {
+    bottom: 0;
+  }
+  nav .icon-burger {
+    display: block;
+  }
+  nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+}
+
